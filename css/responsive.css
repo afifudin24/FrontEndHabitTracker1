@@ -1,0 +1,140 @@
+@media (max-width: 768px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+  
+
+      .page {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      footer {
+        /* align-self: flex-end; */
+        margin-top: auto;
+      }
+   
+    .wrapper{
+        width: 90%;
+        padding: 5px 0;
+        margin: auto;
+    }
+    .wrapper nav{
+        margin-top: 10px;
+    }
+    .wrapper .body{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+  
+    .wrapper .body .left{
+        width: 100%;
+        text-align: center;
+
+    }
+    .wrapper .body .left h1{
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 15px;
+       }
+       .wrapper .body .left p{
+        font-size: 1rem;
+        font-weight: 400;
+        margin-bottom: 20px;
+       }
+       .wrapper .body .left .btn{
+        margin : auto;
+        margin-top: 10px;
+       }
+       
+    .wrapper .body .right{
+        width: 100%;
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+    .wrapper .feature{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 0;
+        justify-content: center;
+    }
+    .wrapper .feature h1{
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 15px;
+       }
+    .wrapper .feature .title p{
+        font-size: 1rem;
+        font-weight: 400;
+        margin-bottom: 20px;
+       }
+    .wrapper .feature .feature-item{
+        flex-direction: column;
+
+    }
+    .wrapper .feature .feature-item .item{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* how it works */
+    .wrapper .works{
+        width: 100%;
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .wrapper .works h1{
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 15px;
+        text-align: center;
+        
+       }
+       .wrapper .works .left p{
+        font-size: 1rem;
+        font-weight: 400;
+        margin-bottom: 20px;
+       }
+    .wrapper .works .left{
+            width: 100%;
+    }
+    .wrapper .works .right{
+        width: 100%;
+        padding: 10px;
+        margin-top: 20px;
+    }  
+    .steps{
+        display: none;
+      
+      }
+    .steps-bagian{
+        display: flex;
+        gap: 10px;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+      }
+    .steps p{
+        font-size: 0.8rem;
+        font-weight: 400;
+        margin-bottom: 20px;
+       }
+    }  
+
+    footer{
+       margin-top: 120px;
+        padding: 10px;
+
+       bottom: 0;
+    }
+
+}
