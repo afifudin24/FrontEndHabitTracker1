@@ -15,7 +15,8 @@ body {
 }
 
 .card {
-    background-color: var(--color-bg-light);
+    /* background-color: var(--color-bg-card); */
+    background-color: red;
     box-shadow: var(--shadow-card);
     border: 1px solid var(--color-border);
     padding: 1rem;
@@ -34,6 +35,12 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
+   
+}
+
+.menu{
+  display: flex;
+  gap: 40px;
 }
 
 .menu ul {
@@ -146,10 +153,10 @@ body {
    width: 100%;
    
     padding: 20px;
-    background-color: #fff;
+    background-color: var(--color-bg-card);
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    font-family: sans-serif;
+
   }
 
   .card h2 {
@@ -167,16 +174,60 @@ body {
   .habit-list li {
     display: flex;
     align-items: center;
+    gap: 10px;
     margin-bottom: 10px;
   }
 
-  .habit-list input[type="checkbox"] {
-    margin-right: 10px;
-  }
+  /* checkbox */
+ /* Kustomisasi checkbox */
+.custom-checkbox {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  display: inline-block;
+  user-select: none;
+}
 
-  .habit-list label {
-    color: #444;
-  }
+/* Sembunyikan checkbox asli */
+.habit-list input[type="checkbox"] {
+  display: none;
+}
+
+/* Kotak checkbox kustom */
+.custom-checkbox::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 20px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+/* Tanda cek */
+.custom-checkbox::after {
+  content: '';
+  position: absolute;
+  display: none;
+  left: 6px;
+  top: 5px;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* Saat dicentang: ubah warna dan tampilkan tanda cek */
+.habit-list input[type="checkbox"]:checked + .custom-checkbox::before {
+  background-color: var(--color-primary-green);
+}
+
+.habit-list input[type="checkbox"]:checked + .custom-checkbox::after {
+  display: block;
+}
 
   .section1{
     margin-top: 30px;
@@ -196,4 +247,140 @@ body {
 
   .section1 .right{
     width: 50%;
+  }
+
+  .section2{
+    margin-top: 50px;
+  }
+
+  .hrline{
+    width: 200px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: var(--color-primary-green);
+   
+  }
+
+  .loglist{
+    margin-top: 50px;
+    display: flex;
+    gap: 10px;
+     justify-content: space-between;
+    flex-wrap: wrap;
+
+  }
+
+  .log{
+    width: 30%;
+    padding: 10px;
+    background-color: var(--color-bg-card);
+    border-radius: 10px;
+   
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+  }
+
+  .log .icon{
+  
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: var(--color-bg-card);
+  }
+
+  .log .icon.check{
+      background-color: var(--color-primary-green);
+  }
+
+  .log .icon.uncheck{
+      background-color: rgb(206, 14, 14);
+  }
+
+  .log .content{
+    margin-left: 10px;
+  }
+
+  /* section 3 */
+  .section3{
+    margin-top: 50px;
+  }
+
+  /* progress overview */
+  /* Atur tinggi dan lebar container */
+.progress-container {
+  position: relative;
+  height: 20px; /* tinggi bar */
+  width: 50%;
+  margin-top: 1rem;
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+/* Target SVG yang dibuat oleh ProgressBar.js */
+.progress-container svg {
+  height: 100%;
+  width: 100%;
+  border-radius: 40px; /* efek rounded pada area SVG */
+  overflow: visible;
+}
+
+/* Target path untuk progress trail */
+.progress-container path.progressbar-trail {
+  stroke: #eee; /* warna background progress bar */
+  stroke-linecap: round;
+  stroke-width: 100%; /* biar ikuti tinggi container */
+}
+
+.progress-container path.progressbar-trail {
+  stroke: #ddd; /* background track */
+}
+
+
+/* Target path untuk progress bar yang terisi */
+.progress-container path.progressbar-path {
+  stroke: var(--color-primary-green); /* warna bar aktif */
+  stroke-linecap: round;
+}
+
+
+.section4{
+  margin-top: 50px;
+}
+
+
+.section5{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+  footer{
+   
+    background-color: var(--color-primary-green);
+    padding: 20px;
+    text-align: center;
+    
+
+  }
+  footer .footer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color : var(--color-text-light);
+  }
+  footer a {
+    color: var(--color-text-light);
+    text-decoration: none;
+  }
+  footer .sosmed{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  footer .sosmed a{
+    font-size: 1.5rem;
+    color: var(--color-text-light);
   }

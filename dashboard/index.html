@@ -9,10 +9,13 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
         <link rel="stylesheet" href="../css/var.css">
         <link rel="stylesheet" href="../css/dashboard.css">
+        <link rel="stylesheet" href="../css/darkmode.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    </head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
         <body>
       
                 <div class="wrapper">
@@ -25,8 +28,7 @@
                             <li><a href="#tutors">Logs</a></li>
                             <li><a href="#partners">Stats</a></li> 
                         </ul>
-                    </div>
-                    <div class="profile">
+                          <div class="profile">
                         <a href="" >
                             <span>
                                 akun
@@ -34,6 +36,8 @@
                          
                         </a>
                     </div>
+                    </div>
+                  
                 </nav>
                     </div>
 
@@ -41,7 +45,7 @@
                         <div class="section1">
                             <!--buat href  -->
                             <div class="left">
-                                <p>📅 Thursday, May 2, 2025</p>
+                                <p><i class="fa fa-calendar"></i> Thursday, May 2, 2025</p>
 
                                 <h1>Good morning, Afif</h1>
                                 <p>Today is another chance to grow.
@@ -52,24 +56,24 @@
                             <div class="right">
                                 <div class="card">
                                     <h2>Habit Hari Ini</h2>
-                                    <ul class="habit-list">
-                                      <li>
-                                        <input type="checkbox" id="habit1">
-                                        <label for="habit1">Minum air putih 8 gelas</label>
-                                      </li>
-                                      <li>
-                                        <input type="checkbox" id="habit2">
-                                        <label for="habit2">Olahraga minimal 30 menit</label>
-                                      </li>
-                                      <li>
-                                        <input type="checkbox" id="habit3">
-                                        <label for="habit3">Baca buku 10 halaman</label>
-                                      </li>
-                                      <li>
-                                        <input type="checkbox" id="habit4">
-                                        <label for="habit4">Tidur sebelum jam 11 malam</label>
-                                      </li>
-                                    </ul>
+                                   <ul class="habit-list">
+  <li>
+    <input type="checkbox" id="habit1">
+    <label for="habit1" class="custom-checkbox">Minum air putih 8 gelas</label>
+  </li>
+  <li>
+    <input type="checkbox" id="habit2">
+    <label for="habit2" class="custom-checkbox">Olahraga minimal 30 menit</label>
+  </li>
+  <li>
+    <input type="checkbox" id="habit3">
+    <label for="habit3" class="custom-checkbox">Baca buku 10 halaman</label>
+  </li>
+  <li>
+    <input type="checkbox" id="habit4">
+    <label for="habit4" class="custom-checkbox">Tidur sebelum jam 11 malam</label>
+  </li>
+</ul>
                                   </div>
 
                             </div>
@@ -83,9 +87,190 @@
                     <div class="wrapper">
                         <div class="section2">
                             <h1>Today Log</h1>
+                            <div class="hrline"></div>
+                            <div class="loglist">
+                                <div class="log">
+                                    <div class="icon check">
+                                        <i class="fas fa-check"></i>
+                                    </div>
+                                    <div class="content">
+
+                                        <p>Minum air putih 100 Galon</p>
+                                        <p>20:00 PM</p>
+                                    </div>
+                                </div>
+                                <div class="log">
+                                    <div class="icon check">
+                                        <i class="fas fa-check"></i>
+                                    </div>
+                                    <div class="content">
+
+                                        <p>Makan 3 Kali + Piringnya</p>
+                                        <p>21:00 PM</p>
+                                    </div>
+                                </div>
+                                 <div class="log">
+                                    <div class="icon uncheck">
+                                        <i class="fas fa-times"></i>
+                                    </div>
+                                    <div class="content">
+
+                                        <p>Lari 3 Jam</p>
+                                        <p>21:00 PM</p>
+                                    </div>
+                                </div>
+
                         </div>
                     </div>
+                    </div>
+
+                    <div class="wrapper">
+                        <div class="section3">
+  <h1>Progress Overview</h1>
+  <p>This week you've completed <strong>18 of 28</strong> total habits ✅</p>
+  <!-- Bisa tambahkan grafik progress bar -->
+<div id="myProgressBar" class="progress-container"></div>
+
+</div>
+
+                    </div>
+
+                    <div class="wrapper">
+                        <div class="section4">
+                           
+  <h1>Weekly Tracker</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Day</th>
+        <th>Completed</th>
+        <th>Missed</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Mon</td><td>✅ 3</td><td>❌ 1</td></tr>
+      <tr><td>Tue</td><td>✅ 4</td><td>❌ 0</td></tr>
+      <tr><td>Wed</td><td>✅ 2</td><td>❌ 2</td></tr>
+    </tbody>
+  </table>
+
+
+                        </div>
+                    </div>
+
+                    <div class="wrapper">
+                        <div class="section5">
+                            <h1>Daily Motivation</h1>
+  <blockquote>"Success doesn’t come from what you do occasionally, it comes from what you do consistently."</blockquote>
+                        </div>
+                    </div>
+
+                      <footer>
+                <div class="wrapper">
+                    <div class="footer">
+                        
+                            <h4>BiasaKeun</h4>
+                            <p>Track your habits and achieve your goals with our easy-to-use habit tracker. Start building positive habits today!</p>
+                            <p>Created By <a href="https://ynzhiao.my.id">Afif Waliyudin</a></p>
+                            <div class="sosmed">
+                                <a href="https://www.instagram.com/ynzhiao_"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="https://www.github.com/afifudin24_"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/afif-waliyudin-aypeep/"><i class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                             
+                </div>
+            </footer>
           
+  <button class="dark-mode-toggle" id="darkToggle">
+                <i class="fas fa-moon" id="toggleIcon"></i>
+              </button>
+                 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/v4-shims.min.js"></script>
+            <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+              <script src="../script/script.js"></script>
+                <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/progressbar.js"></script>
+
+           
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    
+                  if (window.innerWidth <= 768) {
+                    AOS.init(
+                    {
+                        offset: 80,
+                     
+                    }
+                );
+                    document.querySelectorAll("[data-aos-delay]").forEach((el) => {
+                      el.removeAttribute("data-aos-delay");
+                    });
+                  }else{
+                    AOS.init(
+                    
+                );
+                  }
+                 
+
+                });
+              </script>
+              <script>
+              const targetEl = document.querySelector('body');
+let styles = getComputedStyle(targetEl);
+let colorPrimary = styles.getPropertyValue('--color-primary-green').trim();
+
+// Inisialisasi progress bar
+var bar = new ProgressBar.Line('#myProgressBar', {
+  strokeWidth: 1,
+  trailWidth: 1,
+  duration: 1400,
+  color: colorPrimary,
+  trailColor: '#eee',
+  svgStyle: { width: '100%', height: '100%' },
+  step: function(state, bar) {
+    bar.setText(Math.round(bar.value() * 100) + '%');
+  }
+});
+
+bar.animate(0.18);
+
+// Fungsi untuk update warna setelah toggle
+function updateProgressBarColor() {
+  const newColor = getComputedStyle(document.body).getPropertyValue('--color-primary-green').trim();
+  bar.path.setAttribute('stroke', newColor);
+}
+
+// Toggle dark mode
+const toggleButton = document.getElementById('darkToggle');
+const icon = document.getElementById('toggleIcon');
+
+window.addEventListener('DOMContentLoaded', () => {
+  const darkMode = localStorage.getItem('darkMode');
+  if (darkMode === 'enabled') {
+    document.body.classList.add('dark');
+    icon.classList.remove('fa-moon');
+    icon.classList.add('fa-sun');
+    updateProgressBarColor();
+  }
+});
+
+toggleButton.addEventListener('click', () => {
+  document.body.classList.toggle('dark');
+  const isDark = document.body.classList.contains('dark');
+
+  if (isDark) {
+    icon.classList.remove('fa-moon');
+    icon.classList.add('fa-sun');
+    localStorage.setItem('darkMode', 'enabled');
+  } else {
+    icon.classList.remove('fa-sun');
+    icon.classList.add('fa-moon');
+    localStorage.setItem('darkMode', 'disabled');
+  }
+
+  updateProgressBarColor(); // ✅ ganti warna progress bar
+});
+
+</script>
 
         </body>
 </html>
