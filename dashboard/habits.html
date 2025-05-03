@@ -1,0 +1,308 @@
+<!-- struktur html -->
+<!DOCTYPE html>
+<html lang="en">    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link rel="stylesheet" href="../css/var.css">
+        <link rel="stylesheet" href="../css/dashboard.css">
+        <link rel="stylesheet" href="../css/habits.css">
+        <link rel="stylesheet" href="../css/darkmode.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+        <body>
+          <div class="bungkus">
+            <div class="isi">
+
+            
+      
+                <div class="wrapper">
+                    <nav class="notmobile">
+                    <div class="logo"><a href="">BiasaKeun</a></div>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="index.html">Home</a></li> 
+                            <li><a  class="active" href="habits.html">Habits</a></li>
+                            <li><a href="logs.html">Logs</a></li>
+                            <li><a href="stats.html">Stats</a></li> 
+                        </ul>
+                        <div class="profile">
+                        <img src="../assets/afif.jpg" class="imguser" alt="">
+                        <div class="absprofile"> 
+                          <a href="profile.html"><span>Profile</span> <i class="fa-solid fa-user"></i></a>
+                          <a href="../login/index.html"><span>Logout</span> <i class="fa-solid fa-right-from-bracket"></i></a>
+
+                        </div>                           
+                                        </div>
+                    </div>
+                  
+                </nav>
+
+                <nav class="mobile">
+                  <div class="wrapper">
+
+                  
+                  <div class="logo"><a href="">BiasaKeun</a></div>
+                  <div class="burgerbtn">
+                    <i class="fa fa-bars"></i>
+                  </div>
+                </div>
+                </nav>
+                    </div>
+
+                   
+
+                    <div class="wrapper">
+                      <div class="habitsSection1">
+                      <div class="left">
+                        <div>
+                          <button class="btn-add">Add New Habit</button>
+                        </div>
+
+                  
+                        
+                        <table class="habitsTable">
+                          <thead>
+                            <tr>
+                              <th>No</th>
+                              <th>Habits</th>
+                              <th>Status</th>
+                              <th>Period</th>
+                              <th>Target</th>
+                              <th>Action</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>Morning Exercise</td>
+                              <td class="completed"> <i class="fa-solid fa-check"></i></td>
+                              <td>Daily</td>
+                              <td>30 days</td>
+                              <td>
+                                <div  class="flexbtn">
+
+                                
+                                <button class="btn-show"><i class="fa-solid fa-eye"></i></button>
+                                <button class="btn-edit"><i class="fa-solid fa-pen"></i></button>
+                                <button class="btn-delete"><i class="fa-solid fa-trash"></i></button>
+                              </div>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>Read a Book</td>
+                              <td class="missed"><i class="fa-solid fa-times"></i></td>
+                              <td>Daily</td>
+                              <td>15 days</td>
+                              <td>
+                                <div  class="flexbtn">
+
+                               
+                                  <button class="btn-show"><i class="fa-solid fa-eye"></i></button>
+                                  <button class="btn-edit"><i class="fa-solid fa-pen"></i></button>
+                                  <button class="btn-delete"><i class="fa-solid fa-trash"></i></button>
+                              </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="right">
+                        <div class="progress-summary">
+                          <h3>Your Progress</h3>
+                          <p>Total Habits: 5</p>
+                          <p>Completed: 3</p>
+                          <p>Missed: 2</p>
+                          <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 60%;"></div>
+                          </div>
+                          <p class="progress-percent">60% completed</p>
+                        </div>
+                      </div>
+                      
+                      
+                     
+
+                      </div>
+                    </div>
+                  </div>
+                
+                    
+
+                    
+
+                
+                      <footer>
+                <div class="wrapper" >
+                    <div class="footer">
+                        
+                          
+                            <p>Created By <a href="https://ynzhiao.my.id">Afif Waliyudin</a></p>
+                            <div class="sosmed">
+                                <a href="https://www.instagram.com/ynzhiao_"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="https://www.github.com/afifudin24_"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/afif-waliyudin-aypeep/"><i class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                            <p>@2025 BiasaKeun</p>
+                             
+                </div>
+             
+            </footer>
+          </div>
+
+
+             <!-- sidebar -->
+             <div class="sidebar ">
+              <div class="wrapper">
+                  <div class="menu">
+                      <ul>
+                          <li><a  href="index.html">Home</a></li> 
+                          <li><a href="habits.html" class="active">Habits</a></li>
+                          <li><a href="logs.html">Logs</a></li>
+                          <li><a href="stats.html">Stats</a></li> 
+                      </ul>
+                  </div>
+                  <div class="profile">
+                    <a href="">
+
+
+                    <div class="user">
+                      <img src="../assets/afif.jpg" alt="">
+                      <p>Afif Waliyudin</p>
+                    </div>
+                  </a>
+                    <div class="logout">
+                      <a href=""><span>Logout</span> <i class="fa-solid fa-right-from-bracket"></i></a>
+                      
+                    </div>
+                  
+                  </div>
+              </div>
+          </div>
+
+          
+  <button class="dark-mode-toggle" id="darkToggle">
+                <i class="fas fa-moon" id="toggleIcon"></i>
+              </button>
+                 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/v4-shims.min.js"></script>
+            <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+              <script src="../script/script.js"></script>
+                <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/progressbar.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+
+           
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    
+                  if (window.innerWidth <= 768) {
+                    AOS.init(
+                    {
+                        offset: 80,
+                     
+                    }
+                );
+                    document.querySelectorAll("[data-aos-delay]").forEach((el) => {
+                      el.removeAttribute("data-aos-delay");
+                    });
+                  }else{
+                    AOS.init(
+                    
+                );
+                  }
+                 
+
+                });
+              </script>
+              <script>
+            
+// Fungsi untuk update warna setelah toggle
+
+
+// Toggle dark mode
+const toggleButton = document.getElementById('darkToggle');
+const icon = document.getElementById('toggleIcon');
+
+window.addEventListener('DOMContentLoaded', () => {
+  const darkMode = localStorage.getItem('darkMode');
+  if (darkMode === 'enabled') {
+    document.body.classList.add('dark');
+    icon.classList.remove('fa-moon');
+    icon.classList.add('fa-sun');
+    updateProgressBarColor();
+  }
+});
+
+toggleButton.addEventListener('click', () => {
+  document.body.classList.toggle('dark');
+  const isDark = document.body.classList.contains('dark');
+
+  if (isDark) {
+    icon.classList.remove('fa-moon');
+    icon.classList.add('fa-sun');
+    localStorage.setItem('darkMode', 'enabled');
+  } else {
+    icon.classList.remove('fa-sun');
+    icon.classList.add('fa-moon');
+    localStorage.setItem('darkMode', 'disabled');
+  }
+
+});
+
+</script>
+
+<script>
+  var typed = new Typed('#motivate', {
+    strings:
+    [
+  "Small steps every day lead to big changes.",
+  "Consistency is what transforms average into excellence.",
+  "Don’t break the chain — your future self will thank you.",
+  "Habits define your direction, not your intention.",
+  "Success is the sum of small efforts, repeated daily.",
+  "Discipline is choosing between what you want now and what you want most.",
+  "Start where you are. Use what you have. Do what you can.",
+  "What you do today creates your tomorrow.",
+  "Keep going — you're building something powerful.",
+  "A better you begins with a better habit."
+],
+    
+     typeSpeed: 50,
+    backSpeed: 30,
+    loop: true
+  });
+</script>
+
+<script>
+  const navmobile = document.querySelector('nav.mobile');
+  console.log(navmobile);
+  // buat aturan ketika di scroll navmobile tambahkan class bgscroll
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 0) {
+      navmobile.classList.add('bgscroll');
+    } else {
+      navmobile.classList.remove('bgscroll');
+    }
+  });
+</script>
+
+<script>
+  const burgerbtn = document.querySelector('.burgerbtn');
+  const sidebar = document.querySelector('.sidebar');
+  const burgerIcon = document.querySelector('.fa.fa-bars');
+  burgerbtn.addEventListener('click', () => {
+    sidebar.classList.toggle('show');
+    burgerIcon.classList.toggle('fa-times');
+  })
+</script>
+
+        </body>
+</html>

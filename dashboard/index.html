@@ -19,61 +19,77 @@
         <body>
       
                 <div class="wrapper">
-                    <nav>
+                    <nav class="notmobile">
                     <div class="logo"><a href="">BiasaKeun</a></div>
                     <div class="menu">
                         <ul>
-                            <li><a class="active" href="#home">Home</a></li> 
-                            <li><a href="#courses">Habits</a></li>
-                            <li><a href="#tutors">Logs</a></li>
-                            <li><a href="#partners">Stats</a></li> 
+                          <li><a class="active" href="index.html">Home</a></li> 
+                          <li><a href="habits.html">Habits</a></li>
+                          <li><a href="logs.html">Logs</a></li>
+                          <li><a href="stats.html">Stats</a></li> 
                         </ul>
-                          <div class="profile">
-                        <a href="" >
-                            <span>
-                                akun
-                            </span>
-                         
-                        </a>
-                    </div>
+                        <div class="profile">
+                            <img src="../assets/afif.jpg" class="imguser" alt="">
+                            <div class="absprofile"> 
+                              <a href=""><span>Profile</span> <i class="fa-solid fa-user"></i></a>
+                              <a href=""><span>Logout</span> <i class="fa-solid fa-right-from-bracket"></i></a>
+
+                            </div>                           
+                                            </div>
                     </div>
                   
                 </nav>
+
+                <nav class="mobile">
+                  <div class="wrapper">
+
+                  
+                  <div class="logo"><a href="">BiasaKeun</a></div>
+                  <div class="burgerbtn">
+                    <i class="fa fa-bars"></i>
+                  </div>
+                </div>
+                </nav>
                     </div>
 
+                   
                     <div class="wrapper">
                         <div class="section1">
                             <!--buat href  -->
-                            <div class="left">
+                            <div class="left" data-aos="fade-right" data-aos-duration="1000">
                                 <p><i class="fa fa-calendar"></i> Thursday, May 2, 2025</p>
 
                                 <h1>Good morning, Afif</h1>
                                 <p>Today is another chance to grow.
                                     Check off your habits and stay consistent.</p>
-                                    <p>You’ve completed <strong>2 of 4</strong> habits today 🎯</p>
+                                    <p>You’ve completed <strong>2 of 4</strong> habits today <i class="fa fa-arrow-right"></i></p>
 
                             </div>
-                            <div class="right">
+                            <div class="right" data-aos="fade-left" data-aos-duration="1000">
                                 <div class="card">
-                                    <h2>Habit Hari Ini</h2>
-                                   <ul class="habit-list">
-  <li>
-    <input type="checkbox" id="habit1">
-    <label for="habit1" class="custom-checkbox">Minum air putih 8 gelas</label>
-  </li>
-  <li>
-    <input type="checkbox" id="habit2">
-    <label for="habit2" class="custom-checkbox">Olahraga minimal 30 menit</label>
-  </li>
-  <li>
-    <input type="checkbox" id="habit3">
-    <label for="habit3" class="custom-checkbox">Baca buku 10 halaman</label>
-  </li>
-  <li>
-    <input type="checkbox" id="habit4">
-    <label for="habit4" class="custom-checkbox">Tidur sebelum jam 11 malam</label>
-  </li>
-</ul>
+                                    <h2>Today Habits</h2>
+                                    <!-- start list -->
+                                    <ul class="habit-list">
+                                      <li>
+                                        <input type="checkbox" id="habit1">
+                                        <label for="habit1" class="custom-checkbox">Drink 8 glasses of water</label>
+                                      </li>
+                                      <li>
+                                        <input type="checkbox" id="habit2">
+                                        <label for="habit2" class="custom-checkbox">Exercise for at least 30 minutes</label>
+                                      </li>
+                                      <li>
+                                        <input type="checkbox" id="habit3">
+                                        <label for="habit3" class="custom-checkbox">Read 10 pages of a book</label>
+                                      </li>
+                                      <li>
+                                        <input type="checkbox" id="habit4">
+                                        <label for="habit4" class="custom-checkbox">Go to bed before 11 PM</label>
+                                      </li>
+                                    </ul>
+                                    
+
+<!-- end list -->
                                   </div>
 
                             </div>
@@ -84,48 +100,48 @@
                         </div>
                     </div>
 
+                    <!-- start log -->
                     <div class="wrapper">
-                        <div class="section2">
-                            <h1>Today Log</h1>
-                            <div class="hrline"></div>
-                            <div class="loglist">
-                                <div class="log">
-                                    <div class="icon check">
-                                        <i class="fas fa-check"></i>
-                                    </div>
-                                    <div class="content">
+                      <div class="section2" data-aos="fade-up" data-aos-duration="1000">
+                          <h1>Today’s Log</h1>
+                          <div class="hrline"></div>
+                          <div class="loglist">
+                              <div class="log">
+                                  <div class="icon check">
+                                      <i class="fas fa-check"></i>
+                                  </div>
+                                  <div class="content">
+                                      <p>Drank 100 gallons of water</p>
+                                      <p>8:00 PM</p>
+                                  </div>
+                              </div>
+                              <div class="log">
+                                  <div class="icon check">
+                                      <i class="fas fa-check"></i>
+                                  </div>
+                                  <div class="content">
+                                      <p>Ate 3 meals + the plates</p>
+                                      <p>9:00 PM</p>
+                                  </div>
+                              </div>
+                              <div class="log">
+                                  <div class="icon uncheck">
+                                      <i class="fas fa-times"></i>
+                                  </div>
+                                  <div class="content">
+                                      <p>Ran for 3 hours</p>
+                                      <p>9:00 PM</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  
 
-                                        <p>Minum air putih 100 Galon</p>
-                                        <p>20:00 PM</p>
-                                    </div>
-                                </div>
-                                <div class="log">
-                                    <div class="icon check">
-                                        <i class="fas fa-check"></i>
-                                    </div>
-                                    <div class="content">
-
-                                        <p>Makan 3 Kali + Piringnya</p>
-                                        <p>21:00 PM</p>
-                                    </div>
-                                </div>
-                                 <div class="log">
-                                    <div class="icon uncheck">
-                                        <i class="fas fa-times"></i>
-                                    </div>
-                                    <div class="content">
-
-                                        <p>Lari 3 Jam</p>
-                                        <p>21:00 PM</p>
-                                    </div>
-                                </div>
-
-                        </div>
-                    </div>
-                    </div>
+                    <!-- end log -->
 
                     <div class="wrapper">
-                        <div class="section3">
+                        <div class="section3" data-aos="fade-down" data-aos-duration="1000">
   <h1>Progress Overview</h1>
   <p>This week you've completed <strong>18 of 28</strong> total habits ✅</p>
   <!-- Bisa tambahkan grafik progress bar -->
@@ -136,7 +152,7 @@
                     </div>
 
                     <div class="wrapper">
-                        <div class="section4">
+                        <div class="section4" data-aos="zoom-in-down" data-aos-duration="1000">
                            
   <h1>Weekly Tracker</h1>
   <table>
@@ -148,20 +164,33 @@
       </tr>
     </thead>
     <tbody>
-      <tr><td>Mon</td><td>✅ 3</td><td>❌ 1</td></tr>
-      <tr><td>Tue</td><td>✅ 4</td><td>❌ 0</td></tr>
-      <tr><td>Wed</td><td>✅ 2</td><td>❌ 2</td></tr>
+      <tr>
+        <td>Mon</td>
+        <td class="completed"><i class="fas fa-check"></i> 3</td>
+        <td class="missed"><i class="fas fa-times"></i> 1</td>
+      </tr>
+      <tr>
+        <td>Tue</td>
+        <td class="completed"><i class="fas fa-check"></i> 4</td>
+        <td class="missed"><i class="fas fa-times"></i> 0</td>
+      </tr>
+      <tr>
+        <td>Wed</td>
+        <td class="completed"><i class="fas fa-check"></i> 2</td>
+        <td class="missed"><i class="fas fa-times"></i> 2</td>
+      </tr>
     </tbody>
   </table>
-
 
                         </div>
                     </div>
 
                     <div class="wrapper">
-                        <div class="section5">
+                        <div class="section5" data-aos="zoom-in-down" data-aos-offset="10" data-aos-duration="1000">
                             <h1>Daily Motivation</h1>
-  <blockquote>"Success doesn’t come from what you do occasionally, it comes from what you do consistently."</blockquote>
+                          <div id="motivate" style="display:inline;  line-height:1; vertical-align:middle;"> 
+
+                          </div>
                         </div>
                     </div>
 
@@ -169,17 +198,49 @@
                 <div class="wrapper">
                     <div class="footer">
                         
-                            <h4>BiasaKeun</h4>
-                            <p>Track your habits and achieve your goals with our easy-to-use habit tracker. Start building positive habits today!</p>
+                          
                             <p>Created By <a href="https://ynzhiao.my.id">Afif Waliyudin</a></p>
                             <div class="sosmed">
                                 <a href="https://www.instagram.com/ynzhiao_"><i class="fa-brands fa-instagram"></i></a>
                                 <a href="https://www.github.com/afifudin24_"><i class="fa-brands fa-github"></i></a>
                                 <a href="https://www.linkedin.com/in/afif-waliyudin-aypeep/"><i class="fa-brands fa-linkedin"></i></a>
                             </div>
+                            <p>@2025 BiasaKeun</p>
                              
                 </div>
+             
             </footer>
+
+
+             <!-- sidebar -->
+             <div class="sidebar ">
+              <div class="wrapper">
+                  <div class="menu">
+                      <ul>
+                          <li><a class="active" href="index.html">Home</a></li> 
+                          <li><a href="habits.html">Habits</a></li>
+                          <li><a href="logs.html">Logs</a></li>
+                          <li><a href="stats.html">Stats</a></li> 
+                      </ul>
+                  </div>
+                  <div class="profile">
+                    <a href="profile.html">
+
+
+                    <div class="user">
+                      <img src="../assets/afif.jpg" alt="">
+                      <p>Afif Waliyudin</p>
+                    </div>
+                  </a>
+                    <div class="logout">
+                      <a href="../login/index.html"><span>Logout</span> <i class="fa-solid fa-right-from-bracket"></i></a>
+                      
+                    </div>
+                  
+                  </div>
+              </div>
+          </div>
+
           
   <button class="dark-mode-toggle" id="darkToggle">
                 <i class="fas fa-moon" id="toggleIcon"></i>
@@ -189,6 +250,8 @@
               <script src="../script/script.js"></script>
                 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
                 <script src="https://cdn.jsdelivr.net/npm/progressbar.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
 
            
             <script>
@@ -226,12 +289,13 @@ var bar = new ProgressBar.Line('#myProgressBar', {
   color: colorPrimary,
   trailColor: '#eee',
   svgStyle: { width: '100%', height: '100%' },
-  step: function(state, bar) {
+  
+         step: function(state, bar) {
     bar.setText(Math.round(bar.value() * 100) + '%');
   }
 });
 
-bar.animate(0.18);
+bar.animate(0.20);
 
 // Fungsi untuk update warna setelah toggle
 function updateProgressBarColor() {
@@ -270,6 +334,51 @@ toggleButton.addEventListener('click', () => {
   updateProgressBarColor(); // ✅ ganti warna progress bar
 });
 
+</script>
+
+<script>
+  var typed = new Typed('#motivate', {
+    strings:
+    [
+  "Small steps every day lead to big changes.",
+  "Consistency is what transforms average into excellence.",
+  "Don’t break the chain — your future self will thank you.",
+  "Habits define your direction, not your intention.",
+  "Success is the sum of small efforts, repeated daily.",
+  "Discipline is choosing between what you want now and what you want most.",
+  "Start where you are. Use what you have. Do what you can.",
+  "What you do today creates your tomorrow.",
+  "Keep going — you're building something powerful.",
+  "A better you begins with a better habit."
+],
+    
+     typeSpeed: 50,
+    backSpeed: 30,
+    loop: true
+  });
+</script>
+
+<script>
+  const navmobile = document.querySelector('nav.mobile');
+  console.log(navmobile);
+  // buat aturan ketika di scroll navmobile tambahkan class bgscroll
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 0) {
+      navmobile.classList.add('bgscroll');
+    } else {
+      navmobile.classList.remove('bgscroll');
+    }
+  });
+</script>
+
+<script>
+  const burgerbtn = document.querySelector('.burgerbtn');
+  const sidebar = document.querySelector('.sidebar');
+  const burgerIcon = document.querySelector('.fa.fa-bars');
+  burgerbtn.addEventListener('click', () => {
+    sidebar.classList.toggle('show');
+    burgerIcon.classList.toggle('fa-times');
+  })
 </script>
 
         </body>
