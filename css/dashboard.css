@@ -514,7 +514,7 @@ td:first-child {
   .profile-card {
     display: flex;
     align-items: center;
-    background: #f8f9fa;
+    background: var(--color-bg-card);
     border-radius: 12px;
     padding: 20px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -602,13 +602,25 @@ td:first-child {
       background-color: var(--color-primary-green);
       padding: 10px;
       border-radius: 10px;
+      width: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      display: block;
+      height: 40px;
       color: #fff;
       font-weight: 600;
-
+      text-align: center;
     }
 
     .burgerbtn:hover{
       background-color: var(--color-primary-hover);
+    }
+
+    .burgerbtn i{
+      text-align: center;
+      margin: auto;
     }
 
     .bgscroll{
